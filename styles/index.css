@@ -56,6 +56,7 @@
   --color-white: #fff;
   --color-grey: #f7f7f7;
   --btn-grey: #e6e6e6;
+  --btn-border: #e6e6e6;
   --bg-color: #d9d9d9;
   --color-line: #8c8c8c;
   --color-line-materials: #f8f5f4;
@@ -357,6 +358,12 @@ body {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--text-color-blue);
+  border-color: var(--color-blue);
+}
+
 .hero_btn {
   width: 158px;
 }
@@ -653,6 +660,12 @@ body {
 .btn_grey {
   background-color: var(--btn-grey);
   color: var(--color-text-black);
+}
+
+.btn_grey:hover {
+  background-color: var(--bg-white);
+  color: var(--color-text-black);
+  border-color: var(--btn-border);
 }
 
 .history_img {
