@@ -581,7 +581,7 @@ body {
   fill: var(--color-blue);
 }
 
-.services_card:hover > .services_card_icon_wrapper > svg {
+.services_card:hover svg {
   fill: var(--color-white);
 }
 
@@ -1423,6 +1423,18 @@ body {
     padding: 0 24px;
   }
 
+  .btn:hover {
+    background-color: var(--color-blue);
+    color: var(--color-text-white);
+    border-color: transparent;
+  }
+
+  .btn_grey:hover {
+    background-color: var(--btn-grey);
+    color: var(--color-text-black);
+    border-color: transparent;
+  }
+
   .header_top_container {
     padding-top: 17px;
     padding-bottom: 17px;
@@ -1447,6 +1459,42 @@ body {
     height: 215px;
   }
 
+  .services_card:hover {
+    background: var(--bg-white);
+  }
+
+  .services_card:hover > .services_card_bg > svg:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+
+  .services_card:hover > .services_card_bg > svg:nth-child(2) {
+    top: 0;
+    right: 0;
+  }
+
+  .services_card:hover > .services_card_bg > svg:nth-child(3) {
+    bottom: 0;
+    right: 0;
+  }
+
+  .services_card:hover > .services_card_bg > svg:nth-child(4) {
+    bottom: 0;
+    left: 0;
+  }
+
+  .services_card:hover svg {
+    fill: var(--color-blue);
+  }
+
+  .services_card:hover .services_card_title {
+    color: var(--color-text-black);
+  }
+
+  .services_card:hover .services_card_text {
+    color: var(--color-text-black);
+  }
+
   .services_card_content {
     padding: 24px 16px 32px;
     height: 215px;
@@ -1455,6 +1503,10 @@ body {
 
   .services_card_text {
     overflow: hidden;
+  }
+
+  .lawyer_card:hover .lawyers_card_bg {
+    opacity: 0;
   }
 
   .review_item {
@@ -1544,6 +1596,14 @@ body {
     height: 348px;
   }
 
+  .lawyers_card_bg {
+    padding: 18% 6%;
+  }
+
+  .lawyer_card_content {
+    text-align: center;
+  }
+
   .lawyer_card_img {
     height: 235px;
   }
@@ -1561,6 +1621,21 @@ body {
 
   .lawyer_card:nth-child(4) .lawyer_card_img {
     background-image: url('../images/lawyer4-mob.jpg');
+  }
+
+  .lawyer_card_title {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+
+  .lawyer_card_text {
+    max-width: 86%;
+    margin: 0 auto;
+  }
+
+  .lawyer_card_content_text {
+    margin-bottom: 12px;
   }
 
   .reviews_bg {
@@ -1618,6 +1693,14 @@ body {
 
   .scroll_slider_item_title {
     font-size: 14px;
+  }
+
+  .scroll_slider_item:hover .scroll_slider_item_bg_image {
+    opacity: 0;
+  }
+
+  .scroll_slider_item:hover > .scroll_slider_item_title {
+    color: var(--color-text-black);
   }
 
   .footer {
